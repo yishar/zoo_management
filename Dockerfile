@@ -15,4 +15,5 @@ ADD project_backend/nodemon.json /src/nodemon.json
 # Exponer el puerto 3000 del docker
 EXPOSE 3000
 # Por último correr el script
-CMD nodemon app.js
+# CMD nodemon app.js
+CMD [ "npm", "start"]
