@@ -1,0 +1,8 @@
+api:
+  build: .
+  volumes:
+    - "./project_backend:/src/"
+  ports:
+    # Convertir el puerto interno del
+    # docker "3000" en "80" para afuera.
+    - "80:3000"
